@@ -19,8 +19,4 @@ app.use(express.urlencoded({extended:false}));
 app.use(videoRoutes);
 
 
-
-
-
-
 export default app

@@ -1,10 +1,25 @@
 @api=http://127.0.0.1:3000
 get {{api}}/videos
 ###
-get {{api}}/videos/1
+get {{api}}/videos/5ffa06eec047c324f82102d1
 ###
-PUT {{api}}/videos/1
+PUT {{api}}/videos/5ffa06eec047c324f82102d1
+Content-Type: application/json
+
+{
+    "title":"React curso",
+    "description":"This is a react Video",
+    "url":"https://www.youtube.com/watch?v=wOLo-B7mrZM"
+}
 ###
-delete  {{api}}/videos/1
+
+delete  {{api}}/videos/5ffa06eec047c324f82102d1
 ###
 post  {{api}}/videos
+Content-Type: application/json
+
+{
+    "title":"Docker curso",
+    "description":"This is a docker Video",
+    "url":"https://www.youtube.com/watch?v=wOLo-B7mrZM"
+}
